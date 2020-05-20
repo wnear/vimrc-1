@@ -56,6 +56,13 @@ set showmode		" Show current mode
 set wildchar=<TAB>	" start wild expansion in the command line using <TAB>
 set wildmenu            " wild char completion menu
 
+" User Settings
+set nu
+let autosave=5
+let g:tagbar_left=1
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/.ycm_extra_conf.py'
+" let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/c/.ycm_extra_conf.py'
+
 " ignore these files while expanding wild chars
 set wildignore=*.o,*.class,*.pyc
 
@@ -75,8 +82,9 @@ set tm=500
 
 " TAB setting{
    set expandtab        "replace <TAB> with spaces
-   set softtabstop=3 
-   set shiftwidth=3 
+   set softtabstop=4 
+   set tabstop=4
+   set shiftwidth=4 
 
    au FileType Makefile set noexpandtab
 "}      							
